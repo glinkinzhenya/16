@@ -3,13 +3,22 @@
 // sum(5) = 8
 // sum(20) = 28
 
-let sum = 0;
- 
-function first(number) {
-    sum += number ;
-    console.log(sum)
-}
+let total = 0;
 
-first(3);
-first(5);
-first(20);
+function sum(number) {
+    total = total + number;
+    console.log(`Введено число ${number}, сумма ${total}`);
+
+    function sum(number) {
+        total = total + number;
+        console.log(`Введено число ${number}, сумма ${total}`);
+
+        function sum(number) {
+            total = total + number;
+            console.log(`Введено число ${number}, сумма ${total}`);
+        }
+        sum(20);
+    }
+    sum(5);
+}
+sum(3);
